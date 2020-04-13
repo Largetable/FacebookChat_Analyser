@@ -59,6 +59,7 @@ def print_longest_inactive_dates(dates_count):
         if (d>aux[2]):
             aux=(dates.iloc[i+1], dates.iloc[i], d)   
     print("Longest number of days without talking = {} days".format(aux[2].days))
+    print("From {}  to {} .".format(aux[0], aux[1]))
 
 
 def plot_top_dates_msgs(count_sorted):
